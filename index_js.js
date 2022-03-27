@@ -100,14 +100,8 @@ var znackos = document.getElementsByClassName("pocetSklad");
       script.src= 'select/c.js';
       head.appendChild(script);
    }
-   
-
-
-	
 	}
 }	
-
-
 		var span = document.getElementsByClassName("close")[0];
 		document.getElementsByClassName("close")[0].style.zIndex = "13";
 		span.onclick = function() { 
