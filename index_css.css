@@ -1,0 +1,553 @@
+.txtCenter{
+text-align:center;
+}
+/* topnav */
+ul.breadcrumb {
+    left: 0;
+    z-index: 10;
+    margin: auto;
+    padding: 13px 30px;
+    width: 100%;
+    list-style: none;
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 10px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.marginTop{
+  margin: 50px;
+}
+li {
+    padding: 5px;
+}
+@media only screen and (max-width: 600px) {
+   
+  .marginTop{
+    margin: 75px;
+  }
+  li{
+    padding: 2px;
+  }
+  ul.breadcrumb {
+    padding: 5px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 2px;
+  }
+  }
+/* hoover - tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+input[type=submit] {
+color:black;
+    margin-bottom: 11px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    font-size: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: DeepSkyBlue;
+color:red;
+}
+.prihlasTxt{
+    text-decoration: none;
+}
+.prihlasTxt:hover{
+    font-size:111%;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+body{
+  background-color: #eee;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*ALERTY - done*/
+.alertDone {
+  padding: 20px;
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+}
+/*ALERTY - err*/
+.alertErr {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  font-size: 25px;
+}
+.closebtn:hover {
+  color: black;
+}
+
+button {
+  background-color: DodgerBlue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.hide{
+   display: none;
+ }
+
+button:hover {
+  background-color: DeepSkyBlue;
+}
+.administrace{
+ /*  display: none;*/
+}
+/* Radioooooooooooooooooooooooooooooooo */
+/* The container checkbox */
+.containerchckBox {
+  display: block;
+  position: relative;
+   padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 6px;
+  margin-top:6px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.containerchckBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmarkBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.containerchckBox:hover input ~ .checkmarkBox {
+  background-color: #bbb;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerchckBox input:checked ~ .checkmarkBox {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkBox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerchckBox input:checked ~ .checkmarkBox:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerchckBox .checkmarkBox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 6px;
+  margin-top:6px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #bbb;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* GALERYYYYYYYYYYYYYYYYYYYYYYYYYYYYY */
+.red{
+  color:red;
+}
+.green{
+  color:green;
+}
+.orange{
+  color:orange;
+}
+.pocetSklad{
+  display:none;
+}
+.galleryLeft{
+margin: auto !important;
+margin-top: 10px !important;
+}
+.galleryLeft:last-child {
+margin-bottom: 50px !important;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  max-width: 222px;
+    border-radius: 5px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+div.desc {
+  text-align: center;
+}
+
+.left{
+margin:auto;
+margin-top:15px;
+width:20%;
+background-color: #bbb;
+    border-radius: 10px;
+}
+.right{
+margin:10px;
+width:75%;
+border: 2px solid #ededed;
+margin-top: 14px;
+}
+.right:hover {
+    border-radius: 20px;
+    border: 2px solid #a9a4a4;
+}
+.flex{
+display:flex;
+flex-wrap: wrap;
+justify-content: center ;
+}
+.prihlas{
+display:flex;
+flex-wrap: wrap;
+justify-content: center ;
+margin:20px;
+}
+.filter{
+width:100%;
+display:flex;
+flex-wrap: wrap;
+justify-content: center ;
+}
+#ceckBoxFiler{
+    display: none;
+}
+@media only screen and (max-width: 920px) {
+    .podFiltr{
+        display: none;
+    }
+    #ceckBoxFiler{
+        display: block;
+    }
+  .left {
+	display:none;
+    width:100%;
+  }
+  .right {
+    width:100%;
+  }
+  .prihlas{
+	margin:2px;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+  .containerchckBox{
+    margin-left: 15px;
+  }
+  .container{
+    margin-left: 15px;
+  }
+    .filter{
+        display:block;
+        }
+    .filter-content{
+        display: none;
+    }
+div.gallery {
+	  margin: auto;
+	  padding:10px;
+	  max-width: 222px;
+	  float:none;
+	  margin-bottom:5px;
+	  margin-top:5px;
+	}
+}
+
+.modal {
+  z-index: 222;	
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  backdrop-filter: blur(5px);
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 48%;
+  max-width: 1000px;
+
+  border-radius:6px;
+}
+
+/* Caption of Modal Image */
+#caption {
+	font-size: 16px;
+  display: block;
+  width: 48%;
+  max-width: 1000px;
+  text-align: left;
+  color: #ccc;
+  padding: 5px 0;
+  height: 350px;
+   /*-style: solid;
+  border-color: red;*/
+
+}
+#caption h4,h3{
+	text-align: center;
+	margin:0px;
+margin-bottom:3px;
+}
+.red{
+	color: red;
+	}
+	
+.TextKTematu {
+	font-size: 17px;
+  margin: auto;
+  display: block;
+  width: 45%;
+  max-width: 700px;
+  text-align: left;
+  color: #ccc;
+  padding: 5px 0;
+  height: 350px;
+
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+	
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 2px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+  font-size: 50px;
+}
+#txtFoto{
+	display: none;
+	padding-left:47%;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	
+	#txtFoto{
+		padding-left:12%;
+	visibility: hidden;
+}
+	
+  .imgss {
+	  width: 50%;
+	max-width:1000px;
+	max-height:1000px;
+	padding: 5px;
+}
+#txtFoto{
+	margin-left: 25%;
+}
+.flexFooter{
+	margin-right: 33%;
+		}	
+    .modal{
+    padding-top: 33px;
+  }
+.modal-content {
+  max-width: 250px;
+	width:80%;
+	}
+	#caption {
+		font-size: 13px;
+		width:100%;
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 30px;
+		}
+		.pozvanka {
+	padding-top: 47px;
+	width: 100%;
+		}
+}
+	/*/GALLERY*/
