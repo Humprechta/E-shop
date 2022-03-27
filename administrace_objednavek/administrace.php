@@ -315,7 +315,7 @@ if(isset($_SESSION["sesID1"])){
     
     <div class="container">
         <button style="margin:2px;" onclick="window.location.href='../index.php';">Zpět do obchodu</button>
-        <h4 style="text-align: center;">Zde můžete editovat Váš profil. (administrator)</h4>
+        <h4 style="text-align: center;">Zde můžete editovat Váš profil. (-administrator-)</h4>
         <form action="zmenaHeslaAdmin.php" method="post">
         <div class="row">
         <div class="col-25">
