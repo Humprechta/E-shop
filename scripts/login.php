@@ -17,7 +17,7 @@ if(isset($_POST["prihlasit"])){
 
       //anti-spam
       $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-      $recaptcha_secret = '6Ldek70eAAAAAMV82dYqzIW56rkLBmTeOvud9p_o';
+      $recaptcha_secret = '';
 
       try{
       if (isset($_POST['recaptcha_response'])) {
